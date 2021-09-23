@@ -8,8 +8,6 @@ import { getPageUrl } from '../utils';
 export default class Advanced extends React.Component {
     render() {
         const data = _.get(this.props, 'data');
-        console.log(data);
-        
         const config = _.get(data, 'config');
         const posts = _.get(this.props, 'posts');
         const page = _.get(this.props, 'page');
