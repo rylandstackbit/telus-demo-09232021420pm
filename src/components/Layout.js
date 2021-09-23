@@ -104,7 +104,6 @@ export default class Body extends React.Component {
                     {favicon && <link rel="icon" href={withPrefix(favicon)} />}
                     <body className={classNames(`layout-${layoutType}`, `style-${style}`, `palette-${palette}`, `mode-${mode}`, `font-${font}`)} />
                 </Helmet>
-                
                 <div id="site-wrap" className="site" {...oid(page.__metadata.id)}>
                     {hasAnncmnt && anncmntContent && <Announcement page={page} anncmnt={anncmnt} annotationPrefix={`${config.__metadata.id}:announcement`}/>}
                     <Header page={page} config={config} />
