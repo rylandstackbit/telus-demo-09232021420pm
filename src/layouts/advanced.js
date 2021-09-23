@@ -12,6 +12,8 @@ export default class Advanced extends React.Component {
         const posts = _.get(this.props, 'posts');
         const page = _.get(this.props, 'page');
         const sections = _.get(page, 'sections');
+        console.log(sections);
+        
         const pageUrl = getPageUrl(page);
 
         return (
