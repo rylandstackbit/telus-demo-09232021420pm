@@ -6,6 +6,7 @@ import _ from 'lodash';
 import { withPrefix, classNames } from '../utils';
 import Header from './Header';
 import Footer from './Footer';
+import Footer from './Footer';
 import Announcement from './Announcement';
 import NavOverlay from './NavOverlay';
 
