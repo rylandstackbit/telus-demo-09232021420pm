@@ -2,6 +2,7 @@ import Action from './Action';
 import ActionIcon from './ActionIcon';
 import ActionLink from './ActionLink';
 import Announcement from './Announcement';
+import Banner from './Banner';
 import BlogFeedSection from './BlogFeedSection';
 import BlogPostAuthor from './BlogPostAuthor';
 import BlogPostCategories from './BlogPostCategories';
