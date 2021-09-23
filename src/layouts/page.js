@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { Layout } from '../components/index';
 import { markdownify } from '../utils';
 
-import Banner from '../components/';
+import Banner from '../components/Banner';
 
 export default class Page extends React.Component {
     render() {
