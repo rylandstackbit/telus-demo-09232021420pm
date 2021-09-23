@@ -22,7 +22,8 @@ export default class Page extends React.Component {
                         {title && <header className="page__header"><h1 className="page__title" {...fpath('title')}>{title}</h1></header>}
                         {markdownContent && <div className="page__body text-block" {...fpath('markdown_content')}>{markdownify(markdownContent)}</div>}
                     </div>
-                </article>                
+                </article>
+                <Banner />
             </Layout>
         );
     }
