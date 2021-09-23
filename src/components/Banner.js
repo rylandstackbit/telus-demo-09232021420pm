@@ -27,23 +27,7 @@ export default class Banner extends React.Component {
         // ];
 
         return (
-            <Link href={withPrefix(url)} {...attrs} className={classes} {...fpath(annotations.join(' '))}>
-                {(hasIcon && icon) ? (
-                    <React.Fragment>
-                        <Icon icon={icon} />
-                        <span
-                            className={classNames({
-                                'order-first': iconPos === 'right',
-                                'sr-only': iconPos === 'center'
-                            })}
-                        >
-                            {label}
-                        </span>
-                    </React.Fragment>
-                ) :
-                    label
-                }
-            </Link>
+            <p>Hello World</p>
         );
     }
 }
