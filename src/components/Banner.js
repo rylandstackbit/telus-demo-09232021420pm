@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { Link, withPrefix, classNames } from '../utils';
 import Icon from './Icon';
 
-export default class Action extends React.Component {
+export default class Banner extends React.Component {
     render() {
         const action = _.get(this.props, 'action');
         const url = _.get(action, 'url');
