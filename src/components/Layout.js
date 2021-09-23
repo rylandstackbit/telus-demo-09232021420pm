@@ -112,7 +112,6 @@ export default class Body extends React.Component {
                     </main>
                     <Footer config={config} />
                 </div>
-                <Banner />
                 <NavOverlay config={config} />
             </React.Fragment>
         );
