@@ -7,24 +7,24 @@ import Icon from './Icon';
 
 export default class Banner extends React.Component {
     render() {
-        const action = _.get(this.props, 'action');
-        const url = _.get(action, 'url');
-        const newWindow = _.get(action, 'new_window');
-        const noFollow = _.get(action, 'no_follow');
-        const attrs = {};
-        if (newWindow) {
-            attrs.target = '_blank';
-        }
-        if (newWindow || noFollow) {
-            attrs.rel = [(newWindow ? 'noopener' : ''), (noFollow ? 'nofollow' : '')].filter(Boolean).join(' ');
-        }
+        // const action = _.get(this.props, 'action');
+        // const url = _.get(action, 'url');
+        // const newWindow = _.get(action, 'new_window');
+        // const noFollow = _.get(action, 'no_follow');
+        // const attrs = {};
+        // if (newWindow) {
+        //     attrs.target = '_blank';
+        // }
+        // if (newWindow || noFollow) {
+        //     attrs.rel = [(newWindow ? 'noopener' : ''), (noFollow ? 'nofollow' : '')].filter(Boolean).join(' ');
+        // }
 
-        const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
-        const showIcon = hasIcon && icon;
-        const annotations = [
-            `${annotationPrefix}`,
-            `${annotationPrefix}.label${showIcon ? '#span[1]' : ''}`
-        ];
+        // const annotationPrefix = _.get(this.props, 'annotationPrefix', '');
+        // const showIcon = hasIcon && icon;
+        // const annotations = [
+        //     `${annotationPrefix}`,
+        //     `${annotationPrefix}.label${showIcon ? '#span[1]' : ''}`
+        // ];
 
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes} {...fpath(annotations.join(' '))}>
