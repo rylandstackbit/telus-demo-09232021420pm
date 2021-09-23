@@ -28,7 +28,7 @@ export default class Banner extends React.Component {
         // ];
 
         return (
-            <p>Hello World</p>
+            <p>{headline}</p>
         );
     }
 }
