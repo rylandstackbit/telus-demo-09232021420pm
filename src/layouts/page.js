@@ -21,7 +21,6 @@ export default class Page extends React.Component {
                         {markdownContent && <div className="page__body text-block" {...fpath('markdown_content')}>{markdownify(markdownContent)}</div>}
                     </div>
                 </article>
-                <Banner />
             </Layout>
         );
     }
