@@ -19,6 +19,8 @@ export default class Advanced extends React.Component {
                 {_.map(sections, (section, index) => {
                     const sectionType = _.get(section, 'type');
                     const component = _.upperFirst(_.camelCase(sectionType));
+                    console.log(component);
+                    
                     if (!component) {
                         throw new Error(`page section does not have the 'type' property, page: ${pageUrl}`);
                     }
