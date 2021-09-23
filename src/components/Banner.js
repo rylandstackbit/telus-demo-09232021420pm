@@ -7,8 +7,9 @@ import Icon from './Icon';
 
 export default class Banner extends React.Component {
     render() {
+        const section = _.get(this.props, 'section');
         const backgroundColor = _.get(this.props, 'backgroundColor');
-        const headline = _.get(action, 'headline');
+        const headline = _.get(section, 'headline');
         // const newWindow = _.get(action, 'new_window');
         // const noFollow = _.get(action, 'no_follow');
         // const attrs = {};
